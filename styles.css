@@ -1,0 +1,402 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins';
+    list-style: none;
+    text-decoration: none;
+    scroll-behavior: smooth;
+}
+
+header {
+    right: 0;
+    top: 0;
+    z-index: 1000;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 33px 9%;
+    background: transparent;
+}
+
+body {
+    background: #111111;
+    font-family: 'Poppins';
+}
+
+.logo {
+    width: 100px;
+    height: 100px;
+    position: relative;
+}
+
+.navlist {
+    display: flex;
+    align-items: center;
+}
+
+.navlist a {
+    color: white;
+    margin-left: 60px;
+    font-size: 15px;
+    font-weight: 600;
+    border-bottom: 2px solid transparent;
+    transition: all .55s ease;
+}
+
+.navbtn {
+    display: inline-flex;
+    align-items: center;
+    background: radial-gradient(circle, rgba(8,6,88,1) 0%, rgb(59, 46, 247) 100%);
+    padding: 10px 20px;
+    border-radius: 10px;
+    color: white;
+    font-weight: 600;
+    margin-left: 60px;
+    transition: all .5s ease;
+}
+
+.navbtn i {
+    font-size: 22px;
+    margin-right: 10px;
+}
+
+.navbtn:hover {
+    box-shadow: 0 0 10px #4752C4;
+    animation: gradient-animation 3s ease infinite;
+    background: radial-gradient(circle, rgba(8,6,88,1) 0%, rgb(96, 85, 255) 100%);
+    background-size: 300% 300%;
+}
+
+
+
+#menu-icon {
+    color: white;
+    font-size: 30px;
+    z-index: 10001;
+    cursor: pointer;
+    display: none;
+}
+
+.home {
+    min-height: 50vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-position: right;
+    background-size: 500px;
+    padding-bottom: 95px;
+}
+
+.image {
+    border-radius: 10px;
+}
+
+section {
+    padding: 2rem 9%;
+}
+
+.home .content {
+    max-width: 60rem;
+}
+
+.home .content h3 {
+    font-size: 2.5rem;
+    color: #fff;
+}
+
+.home .content p {
+    font-size: 1rem;
+    font-weight: lighter;
+    color: #eee;
+    line-height: 1.8;
+    padding: 1.5rem 0;
+    max-width: 800px;
+    text-align: justify;
+    margin: 0 auto;
+}
+
+
+/* Add this to your existing CSS */
+@keyframes gradient-animation {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+.btn {
+    display: inline-flex;
+    align-items: center;
+    padding: 11px 16px;
+    background: radial-gradient(circle, rgba(49,50,54,1) 0%, rgba(5,4,4,1) 100%);
+    background-size: 300% 300%;
+    color: #fff;
+    border: 2px solid #302e2e;
+    border-radius: 8px;
+    font-size: 15px;
+    font-weight: 600;
+    transition: all .5s ease;
+}
+
+.btn:hover {
+    animation: gradient-animation 3s ease infinite;
+    background: radial-gradient(circle, rgba(24,25,27,1) 0%, rgba(5,4,4,1) 100%);
+    background-size: 300% 300%;
+    color: #fff;
+    box-shadow: 0 0 20px #302e2e;
+    transform: scale(1.1);
+}
+
+
+
+#cloud {
+    font-size: 22px;
+    margin-right: 10px;
+}
+
+.about {
+    background: #111111;
+    color: #eee;
+    padding: 4rem 9%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 50vh;
+    border-top: 2px solid #222;
+}
+
+.about-content {
+    background: radial-gradient(circle, rgb(24, 24, 24) 0%, rgb(17, 17, 17) 100%);
+    max-width: 800px;
+    text-align: center;
+    background-size: 300% 300%;
+    padding: 1.5rem;
+    border-radius: 10px;
+    transition: all 0.3s ease;
+}
+
+.about-content:hover {
+    background: radial-gradient(circle, rgba(24,25,27,1) 0%, rgba(5,4,4,1) 100%);
+    background-size: 300% 300%;
+    transform: scale(1.05);
+    animation: gradient-animation 3s ease infinite;
+
+}
+
+.about h3 {
+    font-size: 2.5rem;
+    color: #fff;
+    margin-bottom: 1.5rem;
+}
+
+.about p {
+    font-size: 1rem;
+    line-height: 1.8;
+    color: #ccc;
+    font-weight: lighter;
+    max-width: 700px;
+    text-align: justify;
+    margin: 0 auto;
+}
+
+
+.copyright {
+    color: #fff;
+    text-align: center;
+    background: #111111;
+}
+
+/* Services Section */
+
+@keyframes gradient-animation {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+.services {
+    background: #111111;
+    padding: 4rem 9%;
+    color: #eee;
+    text-align: center;
+    border-top: 2px solid #222;
+}
+
+.services h3 {
+    font-size: 2.5rem;
+    margin-bottom: 3rem;
+    color: #fff;
+}
+
+.service-container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 2rem;
+}
+
+.service-box {
+    background: radial-gradient(circle, rgb(24, 24, 24) 0%, rgb(17, 17, 17) 100%);
+    background-size: 300% 300%;
+    padding: 2rem;
+    border-radius: 10px;
+    transition: all 0.3s ease;
+    flex: 1;
+    min-width: 250px;
+    max-width: 300px;
+    margin: 0 auto;
+    text-align: center;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+.service-box i {
+    font-size: 3rem;
+    color: #5865F2;
+    margin-bottom: 1.5rem;
+}
+
+.service-box h4 {
+    font-size: 1.5rem;
+    color: #fff;
+    margin-bottom: 1rem;
+}
+
+.service-box p {
+    font-size: 1rem;
+    color: #ccc;
+    line-height: 1.6;
+}
+
+.service-box:hover {
+    background: radial-gradient(circle, rgba(24,25,27,1) 0%, rgba(5,4,4,1) 100%);
+    background-size: 300% 300%;
+    transform: scale(1.05);
+    animation: gradient-animation 3s ease infinite;
+}
+
+.service-box i {
+    font-size: 3rem;
+    color: #ccc;
+    margin-bottom: 1rem;
+}
+
+
+@media (max-width: 768px) {
+
+    header {
+        padding: 20px 5%;
+        justify-content: space-between;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .logo {
+        width: 80px;
+        height: 80px;
+    }
+
+    #menu-icon.active {
+        color: #fff;
+    }
+    
+    .navlist {
+        display: none;  /* Hide by default */
+        flex-direction: column;
+        text-align: center;
+        background-color: #111;
+        position: absolute;
+        top: 100px; /* Adjust as needed */
+        right: 0;
+        width: 100%;
+    }
+    
+    .navlist.active {
+        display: flex;  /* Show when active */
+    }
+    
+    .navlist a {
+        padding: 15px;
+        font-size: 16px;
+        color: white;
+        display: block;
+    }
+
+    .home {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .home .content {
+        max-width: 90%;
+        margin-bottom: 20px;
+    }
+
+    .image {
+        max-width: 80%;
+        margin: 0 auto;
+    }
+
+    .service-container {
+        flex-direction: column;
+        gap: 1.5rem;
+    }
+
+    .about {
+        padding: 2rem 5%;
+        text-align: center;
+    }
+
+    .about-content {
+        max-width: 90%;
+    }
+
+    .copyright {
+        padding: 1rem 5%;
+    }
+
+    .btn, .navbtn {
+        padding: 10px 15px;
+        font-size: 14px;
+    }
+
+    #menu-icon {
+        display: block;
+    }
+
+    .navlist {
+        display: none;
+    }
+
+    #menu-icon.active + .navlist {
+        display: flex;
+    }
+}
+
+@media (max-width: 480px) {
+
+    .home {
+        padding-bottom: 50px;
+    }
+
+    .btn, .navbtn {
+        padding: 8px 12px;
+        font-size: 13px;
+    }
+
+    .image {
+        max-width: 100%;
+    }
+}
