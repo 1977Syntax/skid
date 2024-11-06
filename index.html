@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
+    <link rel="icon" type="image/x-icon" href="images/DexLogo.png">
+    <link href='https://fonts.googleapis.com/css?family=Poppins' rel='stylesheet'>
+    <link rel="stylesheet" href="style.css">
+    <title>Dexus</title>
+</head>
+<body>
+
+    <header>
+        <img class="logo" src="images/DexLogo.png">
+        
+        <ul class="navlist" id="navlist">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="https://discord.gg/fmUrn5ZqJw" target="_blank" class="navbtn"> <i class='bx bxl-discord-alt'></i> Discord</a></li>
+        </ul>
+    
+        <div class="bx bx-menu" id="menu-icon"></div>
+    </header>
+
+    <section class="home" id="home">
+        <div class="content">
+            <h3>Introducing, The Best Free CS2 Cheat!</h3>
+            <p>
+                Dexus, the free Counter-Strike 2 cheat that offers a wide variety of features like Aimbot for pin-point accuracy, ESP to see enemies through walls, and Sticky Aim for smoother targeting. It also provides an edge in casual matches, with the possibility of being banned in competitive play.
+            </p>
+            <a href="https://link-hub.net/427516/dexus-cs2-cheat" target="_blank" class="btn"> <i class='bx bx-cloud-download' id="cloud"></i> Download</a>
+        </div>
+        <img class="image" src="images/Dexuspp.png" alt="">
+    </section>
+
+    <section class="services" id="services">
+        <h3>Our Features</h3>
+        <div class="service-container">
+            <div class="service-box">
+                <i class='bx bx-target-lock'></i>
+                <h4>Aimbot</h4>
+                <p>Our Aimbot ensures pinpoint accuracy, giving you the edge in every battle.</p>
+            </div>
+    
+            <div class="service-box">
+                <i class='bx bx-show'></i>
+                <h4>ESP</h4>
+                <p>See enemies through walls with our ESP feature and stay one step ahead.</p>
+            </div>            
+    
+            <div class="service-box">
+                <i class='bx bx-crosshair'></i>
+                <h4>Sticky Aim</h4>
+                <p>Enjoy smoother targeting and control with our advanced Sticky Aim feature.</p>
+            </div>
+        </div>
+    </section>    
+    
+
+    <section class="about" id="about">
+        <div class="about-content">
+            <h3>About Us</h3>
+            <p>Dexus has released its first free Counter-Strike 2 cheat in beta! This cheat offers a wide range of features, including Aimbot, ESP, and Sticky Aim, providing players with an enhanced gameplay experience. The beta version is stable, and users can enjoy all the features without any cost. Our goal is to deliver top-notch performance while ensuring the cheat works smoothly and efficiently in Counter-Strike 2.</p>
+        </div>
+    </section>
+
+    <section class="copyright">
+    <div>
+        <p>© Dexus Softworks - All Rights Reserved</p>
+    </div>
+</section>
+
+<script>
+    const menuIcon = document.getElementById('menu-icon');
+    const navlist = document.getElementById('navlist');
+
+    menuIcon.addEventListener('click', () => {
+        navlist.classList.toggle('active');
+        menuIcon.classList.toggle('active');
+    });
+</script>
+
+</body>
+</html>
